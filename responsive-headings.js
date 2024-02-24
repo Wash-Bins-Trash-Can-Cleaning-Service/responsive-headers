@@ -15,11 +15,16 @@ function generateH1(id) {
   var screenSize = window.innerWidth;
   if (screenSize < 768) {
     h1Element.style.fontSize = h1Data.phoneSize + "px";
+    h1Element.style.textAlign = "left";
   } else if (screenSize >= 768 && screenSize <= 1349) {
     h1Element.style.fontSize = h1Data.tabletSize + "px";
+    h1Element.style.textAlign = "center";
   } else {
     h1Element.style.fontSize = h1Data.desktopSize + "px";
+    h1Element.style.textAlign = "center";
   }
+
+  h1Element.style.color = "#1752a3";
 
   h1Element.id = id;
   document.getElementById(id).appendChild(h1Element);
