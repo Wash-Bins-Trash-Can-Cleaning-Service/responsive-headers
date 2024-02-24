@@ -5,7 +5,6 @@ var h1Tags = {
     tabletSize: 35,
     desktopSize: 55
   },
-  // Add more pages as needed
 };
 
 function generateH1(id) {
